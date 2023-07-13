@@ -1,4 +1,4 @@
-import { Column, Entity, OneToMany } from 'typeorm';
+import { Column, Entity } from 'typeorm'
 import { Base } from '../../utils/base'
 
 @Entity('product')
@@ -9,6 +9,6 @@ export class ProductEntity extends Base {
 	@Column()
 	avatar: string
 
-	@Column({default: 0})
+	@Column({ default: 0 })
 	price: number
 }

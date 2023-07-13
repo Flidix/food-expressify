@@ -9,6 +9,7 @@ import { AuthModule } from './auth/auth.module';
 import { ProductModule } from './product/product.module';
 import { FileModule } from './file/file.module'
 import { OfferModule } from './offer/offer.module';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { OfferModule } from './offer/offer.module';
       AuthModule,
       ProductModule,
       FileModule,
-      OfferModule
+      OfferModule,
+      ChatModule
   ],
   controllers: [AppController],
   providers: [AppService],
